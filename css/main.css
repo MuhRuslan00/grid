@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;900&display=swap");
+:root {
+  --c-number:#C5C6CE;
+  --c-title:#000;
+  --c-text:#5E607A;
+  --c-border:#C5C6CE;
+  --f-number: 900 22px "Inter", sans-serif;
+}
+
+.number {
+  font: var(--f-number);
+  color: var(--c-number);
+}
+
+body {
+  height: 100vh;
+  padding-top: 100px;
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  padding-top: 100px;
+  max-width: 1270px;
+  padding: 0 15px;
+  margin: 0 auto;
+}/*# sourceMappingURL=main.css.map */

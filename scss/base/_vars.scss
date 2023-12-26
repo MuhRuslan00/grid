@@ -1,0 +1,14 @@
+:root{
+  --c-number:#C5C6CE;
+  --c-title:#000;
+  --c-text:#5E607A;
+  --c-border:#C5C6CE;
+
+  --f-number: 900 22px "Inter", sans-serif;
+
+}
+.number{
+  font: var(--f-number);
+  color: var(--c-number);
+  
+}
