@@ -1,26 +1,65 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;900&display=swap");
 :root {
+  --font: "Inter", sans-serif;
   --c-number:#C5C6CE;
   --c-title:#000;
   --c-text:#5E607A;
   --c-border:#C5C6CE;
-  --f-number: 900 22px "Inter", sans-serif;
+  --f-number: 900 22px var(--font);
+  --f-title: 900 20px var(--font);
+  --f-text: 400 16px/1.5 var(--font);
 }
 
-.number {
+@media (max-width: 840px) {
+  :root {
+    --f-number: 900 20px var(--font);
+    --f-title: 600 18px var(--font);
+    --f-text: 400 16px/1.5 var(--font);
+  }
+}
+body {
+  position: fixed;
+  height: 100vh;
+  padding-top: 100px;
+  font-family: var(--font);
+}
+
+.container {
+  max-width: 1270px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.section__news {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  gap: 40px 50px;
+}
+
+.news {
+  display: grid;
+  grid-template-columns: 120px auto;
+  grid-template-rows: subgrid;
+  grid-row: 1/5;
+  gap: 10px 20px;
+  padding: 10px;
+  border: 1px solid var(--c-border);
+}
+
+.new__img {
+  grid-row: 1/5;
+}
+
+.news__number {
   font: var(--f-number);
   color: var(--c-number);
 }
 
-body {
-  height: 100vh;
-  padding-top: 100px;
-  font-family: "Inter", sans-serif;
+.news__title {
+  font: var(--f-title);
+  color: var(--c-title);
 }
 
-.container {
-  padding-top: 100px;
-  max-width: 1270px;
-  padding: 0 15px;
-  margin: 0 auto;
+.news__text {
+  font: var(--f-text);
+  color: var(--c-text);
 }/*# sourceMappingURL=main.css.map */

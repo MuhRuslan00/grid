@@ -1,19 +1,23 @@
-  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;900&display=swap');
-
-
 body{
+  position: fixed;
   height: 100vh;
   padding-top: 100px;
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font);
 }
 
-.container{
-  padding-top: 100px;
+.container {
   max-width: 1270px;
   padding: 0 15px;
   margin: 0 auto;
-
 }
 
 .section__news {
+  display: grid;
+  // grid-template-columns: repeat(3, 1fr);
+
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  gap: 40px 50px;
+
+  // subgrid
+  // grid-template-rows: repeat(4, auto);
 }
